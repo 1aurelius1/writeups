@@ -29,10 +29,10 @@ We can use this POST request in Hydra to brute force the login HTML post form.
 I guess that the username is probably admin, considering it's an admin login form. We'll use rockyou.txt as our wordlist and use 'Username or password invalid' as our failure criteria. After only a couple of seconds, we get our login credentials.
 
 We can use these to login to the admin page. We're greeted by one of our flags and a private RSA key. How fun!
-![](login_success.png)
+![](login-success.png)
 
 We can use this private RSA key in conjunction with ssh2john to generate a hash that we can crack later. First, let's echo the private key into a new id_rsa file.
-![](rsa_private.png)
+![](rsa-private.png)
 
 After doing so, we can use ssh2john to generate a hash and then use john to crack that hash.
 ![](ssh2john-hash.png)
