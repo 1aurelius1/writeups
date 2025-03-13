@@ -58,5 +58,6 @@ We'll echo the root hash into another file and use john to crack it.
 ![](root-hash-crack.png)
 
 We got our root password. Now we can switch users to root and provide the password. Presto! We're now root. I find the root flag in `/root/root.txt` and read its contents.
+![](root-flag.png)
 
 Now I've successfully rooted Brute It!
