@@ -32,6 +32,7 @@ We can use these to login to the admin page. We're greeted by one of our flags a
 ![](login-success.png)
 
 We can use this private RSA key in conjunction with ssh2john to generate a hash that we can crack later. First, let's echo the private key into a new id_rsa file.
+
 ![](rsa-private.png)
 
 After doing so, we can use ssh2john to generate a hash and then use john to crack that hash.
